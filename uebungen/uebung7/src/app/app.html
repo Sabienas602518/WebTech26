@@ -1,0 +1,27 @@
+<h1>Members</h1>
+
+<!-- Suchfeld -->
+<input 
+  type="text" 
+  placeholder="Search by name..."
+  (input)="onSearch($event)" />
+
+<!-- Tabelle -->
+<table border="1">
+  <thead>
+    <tr>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>E-Mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (member of filteredMembers; track member.email) {
+      <tr>
+        <td>{{ member.forename }}</td>
+        <td>{{ member.surname }}</td>
+        <td>{{ member.email }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
