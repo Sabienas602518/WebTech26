@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uebung 3</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background: #185c34;
+        color: white;
+        front-size: 1.5rem;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);    /*4 : 4 Spalten, 1fr : alle sind gleich groß  -> 4 mal wiederholt */
+        gap: 2vw;                           
+        padding: 20px;
+    }
+
+    .citycard {
+        background: white;
+         text-align: center;
+         display: grid;
+         grid-template-rows: 4fr 1 fr;
+         align-items: center;
+        box-shadow: rgba(0,0,0,0.35) 0px 5 px 15 px;
+    }
+
+    .citycard:hover{
+        box-shadow: rgba(50,50,93,0.25) 0px 30px 60px -12px;
+        font-weight: bold;
+    }
+    .cityimage img {
+        width: 100%;
+        object-fit: cover;
+    }
+ 
+
+    .cityname 
+    { 
+        background-color: white;
+        margin: 0;
+        font-size: 1.1rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+@media screen and(min-width: 600px)
+{
+    .wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and(min-width: 800px)
+{
+    .wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and(min-width: 1200px)
+{
+    .wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <h2>STÄDTE</h2>
+    </header>
+    <main>
+
+
+        <section class="wrapper">
+            <div class="citycard">
+
+                <div class="cityimage">
+                    <img src="./Bilder/images/berlin.png" alt="Berlin">
+                </div>
+                <div class="cityname">
+                    <p>Berlin</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/bernau.png" alt="Bernau">
+                </div>
+                <div class="cityname">
+                    <p>Bernau</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/brandenburg.png" alt="Brandenburg">
+                </div>
+                <div class="cityname">
+                    <p>Brandenburg</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/bremen.png" alt="Bremen">
+                </div>
+                <div class="cityname">
+                    <p>Bremen</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/bremerhaven.png" alt="Bremerhaven">
+                </div>
+                <div class="cityname">
+                    <p>Bremerhaven</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/madrid.png" alt="Madrid">
+                </div>
+                <div class="cityname">
+                    <p>Madrid</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/magdeburg.png" alt="Magdeburg">
+                </div>
+                <div class="cityname">
+                    <p>Magdeburg</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/mainz.png" alt="Mainz">
+                </div>
+                <div class="cityname">
+                    <p>Mainz</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/mannheim.png" alt="Mannheim">
+                </div>
+                <div class="cityname">
+                    <p>Mannheim</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/Marburg.png" alt="Marburg">
+                </div>
+                <div class="cityname">
+                    <p>Marburg</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/newyork.png" alt="New York">
+                </div>
+                <div class="cityname">
+                    <p>New York</p>
+                </div>
+            </div>
+
+            <div class="citycard">
+                <div class="cityimage">
+                    <img src="./Bilder/images/stockholm.png" alt="Stockholm">
+                </div>
+                <div class="cityname">
+                    <p>Stockholm</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+  <p>© 2026 Übung 3</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+<!-- ein HTML-Kommentar-->
