@@ -1,5 +1,5 @@
-header {
-  background-color: #AFAFAF;
+#header {
+  background-color: rgb(202, 195, 195);
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }

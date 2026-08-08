@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
+import { Home } from './home/home';
+import { Form } from './form/form';
 import { Table } from './table/table';
-import { Form} from './form/form';
 
 export const routes: Routes = [
-     { path: '', redirectTo: 'read', pathMatch: 'full' },
-  { path: 'read', component: Table },
+  { path: '', component: Home },
   { path: 'create', component: Form },
+  { path: 'read', component: Table }
 ];

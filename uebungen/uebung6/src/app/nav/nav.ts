@@ -3,11 +3,10 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
-  standalone: true,
-  imports: [RouterLink],
+  imports: [ RouterLink ],
   templateUrl: './nav.html',
-  styleUrl: './nav.css'
+  styleUrl: './nav.css',
 })
-export class Nav{
+export class Nav {
 
 }

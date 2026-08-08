@@ -1,8 +1,5 @@
-footer {
-  background-color: #AFAFAF;
+#footer {
+  background-color: rgb(202, 195, 195);
   text-align: center;
-  padding: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: .5rem;
 }
